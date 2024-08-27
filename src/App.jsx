@@ -7,16 +7,19 @@ import './App.css';
 import Mistitulos from "./componentes/Titulos/Titulos.jsx";
 import MisImagenes from "./componentes/Imagenes/Imagenes.jsx";
 import Navbar from "./componentes/Navbar/Navbar.jsx";
+import Slider from "./componentes/Sliders/Sliders.jsx";
 
 function App() {
     return (
         <>
+            <Slider/>
+            <Navbar/>
             <div className="background"></div>
             <div className="background1"></div>
             <div className="content">
-                <Navbar/>
-                <Mistitulos titulo='ZapStore'/>
-                <MisImagenes src="/logo01.jpeg" alt="hola"/>
+                <MisImagenes src="/image03.png" alt="hola"/>
+                <MisImagenes src="/image03.png" alt="hola"/>
+                <MisImagenes src="/image03.png" alt="hola"/>
             </div>
         </>
     )

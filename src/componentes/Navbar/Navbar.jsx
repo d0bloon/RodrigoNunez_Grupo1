@@ -7,7 +7,6 @@ import Slider from "../Sliders/Sliders.jsx";
 const Navbar = () => {
     return(
     <div>
-        <Slider/>
         <header className="header">
             <img className="logo" src="/logo.png" alt="logo"/>
             <nav className="navbar">
