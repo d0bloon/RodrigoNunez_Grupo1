@@ -1,25 +1,19 @@
-import {useState} from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
 import './App.css';
-
-import Mistitulos from "./componentes/Titulos/Titulos.jsx";
-import MisImagenes from "./componentes/Imagenes/Imagenes.jsx";
-import Navbar from "./componentes/Navbar/Navbar.jsx";
-import Slider from "./componentes/Sliders/Sliders.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import MisImagenes from "./components/Imagenes/Imagenes.jsx";
+import Banner from "./components/Banner/Banner.jsx";
 
 function App() {
     return (
         <>
-            <Slider/>
+            <Banner/>
             <Navbar/>
-            <div className="background"></div>
-            <div className="background1"></div>
             <div className="content">
-                <MisImagenes src="/image03.png" alt="hola"/>
-                <MisImagenes src="/image03.png" alt="hola"/>
-                <MisImagenes src="/image03.png" alt="hola"/>
+                <MisImagenes misrc="/image03.png" mialt="hola"/>
+                <MisImagenes misrc="/image03.png" mialt="hola"/>
+                <MisImagenes misrc="/image03.png" mialt="hola"/>
             </div>
         </>
     )

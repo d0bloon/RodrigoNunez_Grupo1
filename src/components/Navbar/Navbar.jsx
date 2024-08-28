@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons';
 import Slider from "../Sliders/Sliders.jsx";
+import './header.css';
 
 const Navbar = () => {
     return(
@@ -10,11 +9,11 @@ const Navbar = () => {
         <header className="header">
             <img className="logo" src="/logo.png" alt="logo"/>
             <nav className="navbar">
-                <a href="/">Inicio</a>
-                <a href="/">Acerca de</a>
-                <a href="/">Descubre</a>
-                <a href="/">Servicios</a>
-                <a href="/">Contacto</a>
+                <a href="/">Ofertas</a>
+                <a href="/">Marcas</a>
+                <a href="/">Hombre</a>
+                <a href="/">Mujer</a>
+                <a href="/">Nuevos Lanzamientos</a>
             </nav>
                 <div className="search-bar">
                     <input type="text" placeholder="Buscar..."/>

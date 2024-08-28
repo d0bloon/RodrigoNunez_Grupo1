@@ -1,27 +1,24 @@
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-html, body {
+h1 {
+    color: white;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+}
+body {
     margin: 0;
-    height: 100%;
-    width: 100%;
+    padding: 0;
     font-family: Arial, sans-serif;
 
 }
 .container {
     position: relative;
-    height: auto;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
-.imagen{
-    border-radius: 15px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
+/*Backgrounds*/
 .background {
     background-color: #e8ece9;
     background-size: cover;
@@ -60,121 +57,4 @@ html, body {
     position: relative;
     z-index: 1;
     color: white;
-    font-family: 'Roboto', sans-serif;
-}
-h1 {
-    color: white;
-    position: center;
-    z-index: 1;
-    font-family: 'Roboto', sans-serif;
-}
-/* Estilos para el contenedor del header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-    color: white;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #d25d61;
-    position: relative;
-    z-index: 1;
-    height: 140px;
-    overflow: hidden;
-}
-
-/* Estilos para el logo */
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-
-/* Estilos para la barra de búsqueda */
-.search-bar {
-    flex: 1;
-    display: flex;
-    justify-content: end;
-    margin: 0 35px;
-}
-
-.search-bar input {
-    width: 100%;
-    max-width: 300px;
-    padding: 5px;
-    border: none;
-    border-radius: 4px;
-}
-
-/* Estilos para la barra de navegación */
-.navbar {
-    display: flex;
-    gap: 15px;
-    font-size: 20px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.navbar a:hover {
-    background-color: #6b0103;
-}
-
-.icons {
-    font-size: 18px; /* Ajusta el tamaño del icono */
-    padding: 10px 15px; /* Alinea el icono con el texto */
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-
-}
-/* Estilos para el slider */
-.slider-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    background-color: #c21a01;
-    color: white;
-    z-index: 2;
-}
-
-.slider {
-    display: flex;
-    align-items: center;
-    height: 50px; /* Altura del slider */
-}
-
-.slide-track {
-    display: flex;
-    width: calc(250px * 12); /* Ancho según el número de slides */
-    animation: scroll 20s linear infinite;
-}
-
-.slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px; /* Ancho de cada slide */
-    font-size: 21px; /* Tamaño del texto */
-    font-weight: bold;
-    color: white;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-250px * 6)); /* Ajustar según el número de slides */
-    }
 }

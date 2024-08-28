@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faTiktok } from '@fortawesome/free-brands-svg-icons';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faTruckFast, faCartShopping } from '@fortawesome/free-solid-svg-icons';
+
+import './slider.css';
 
 const Slider = () => {
     return (
@@ -12,26 +13,30 @@ const Slider = () => {
                     <div className="slide">
                         <FontAwesomeIcon icon={faInstagram} /> ZapStore.cl
                     </div>
-                    <div className="slide">Envio Gratis a miembros</div>
-                    <div className="slide">25% Descuento</div>
-                    {/* Repetimos las diapositivas para un efecto continuo */}
+                    <div className="slide">
+                        <FontAwesomeIcon icon={faTruckFast} /> Envio Gratis a miembros
+                    </div>
+                    <div className="slide"> 25% Descuento
+                    </div>
                     <div className="slide">ZapStore</div>
                     <div className="slide">
                         <FontAwesomeIcon icon={faInstagram} /> ZapStore.cl
                     </div>
-                    <div className="slide">Envio Gratis a miembros</div>
+                    <div className="slide">
+                        <FontAwesomeIcon icon={faTruckFast} /> Envio Gratis a miembros
+                    </div>
                     <div className="slide">25% Descuento</div>
-                    {/* Duplicamos las diapositivas */}
                     <div className="slide">ZapStore</div>
                     <div className="slide">
                         <FontAwesomeIcon icon={faInstagram} /> ZapStore.cl
                     </div>
-                    <div className="slide">Envio Gratis a miembros</div>
+                    <div className="slide">
+                        <FontAwesomeIcon icon={faTruckFast} /> Envio Gratis a miembros
+                    </div>
                     <div className="slide">25% Descuento</div>
                 </div>
             </div>
         </div>
-    );
-};
-
+    )
+}
 export default Slider;

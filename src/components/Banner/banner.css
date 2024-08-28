@@ -1,0 +1,41 @@
+.banner-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #c21a01;
+    color: white;
+    z-index: 2;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    height: 50px; /* Altura del slider */
+}
+
+.banner-track {
+    display: flex;
+    width: calc(300px * 8); /* Ancho según el número de slides */
+    animation: scroll 25s linear infinite;
+}
+
+.banners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px; /* Ancho de cada slide */
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold;
+    color: white;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-300px * 4)); /* Ajustar según el número de slides */
+    }
+}
