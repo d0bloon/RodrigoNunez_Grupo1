@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from "./components/Navbar/Navbar.jsx";
 import MisImagenes from "./components/Imagenes/Imagenes.jsx";
 import Banner from "./components/Banner/Banner.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <MisImagenes misrc="/image03.png" mialt="hola"/>
                 <MisImagenes misrc="/image03.png" mialt="hola"/>
             </div>
+            <Footer/>
         </>
     )
 }

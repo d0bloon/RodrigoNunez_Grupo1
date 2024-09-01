@@ -2,7 +2,7 @@
 .header {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 0;
     color: white;
     width: 100%;
@@ -12,16 +12,17 @@
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
-    height: 140px;
+    height: 5.9em;
     overflow: hidden;
-    margin: 0;
+    margin: 3em 0 0 0;
 }
 
 /* Estilos para el logo */
 .logo {
-    height: 8em;
-    padding: 1.5em;
-    will-change: filter;
+    display: flex;
+    align-items: center;
+    height: 6em;
+    margin: 0 10px;
     transition: filter 300ms;
 }
 .logo:hover {
@@ -35,13 +36,14 @@
 .search-bar {
     flex: 1;
     display: flex;
+    padding: 2em 1em;
     justify-content: flex-end;
-    margin: 0 35px;
+    margin: 0 10px;
 }
 
 .search-bar input {
     width: 100%;
-    max-width: 300px;
+    max-width: 20em;
     padding: 5px;
     border: none;
     border-radius: 4px;
@@ -50,18 +52,32 @@
 /* Barra de navegación */
 .navbar {
     display: flex;
-    gap: 15px;
-    font-size: 20px;
+    gap: 2em;
+    margin: 0 10px;
+    font-size: 18px;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
     border-radius: 4px;
     transition: background-color 0.3s;
 }
 
 .navbar a:hover {
     background-color: #6b0103;
+    padding: 1em;
+    transition: padding 0.2s;
+}
+.icon {
+    display: flex;
+    gap: 1px;
+    font-size: 17px;
+    margin: 0 10px;
+}
+.icon a {
+    color: white;
+    text-decoration: none;
+    padding: 2em 1em;
+    transition: background-color 0.3s;
 }

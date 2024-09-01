@@ -12,7 +12,7 @@
 .banner {
     display: flex;
     align-items: center;
-    height: 50px; /* Altura del slider */
+    height: 3em; /* Altura del slider */
 }
 
 .banner-track {

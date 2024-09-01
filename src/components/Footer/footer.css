@@ -1,0 +1,19 @@
+.footer {
+    background-color: black;
+    color: white;
+    height: 25em;
+    overflow: hidden;
+}
+.logof {
+    display: flex;
+    align-items: center;
+    height: 10em;
+    margin: 1em 0 0 3em;
+    transition: filter 300ms;
+}
+.logof:hover {
+    filter: drop-shadow(0 0 2em #c21a01);
+}
+.logof.react:hover {
+    filter: drop-shadow(0 0 2em #6b0103);
+}

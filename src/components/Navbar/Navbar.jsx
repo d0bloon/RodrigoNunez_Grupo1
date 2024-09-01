@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass, faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faBagShopping, faUser, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import Slider from "../Sliders/Sliders.jsx";
 import './header.css';
 
@@ -9,17 +9,19 @@ const Navbar = () => {
         <header className="header">
             <img className="logo" src="/logo.png" alt="logo"/>
             <nav className="navbar">
-                <a href="/">Ofertas</a>
-                <a href="/">Marcas</a>
-                <a href="/">Hombre</a>
-                <a href="/">Mujer</a>
-                <a href="/">Nuevos Lanzamientos</a>
+                <a href="/">Ofertas <FontAwesomeIcon className="icons" icon={faAngleDown}/></a>
+                <a href="/">Marcas <FontAwesomeIcon className="icons" icon={faAngleDown}/></a>
+                <a href="/">Hombre <FontAwesomeIcon className="icons" icon={faAngleDown}/></a>
+                <a href="/">Mujer <FontAwesomeIcon className="icons" icon={faAngleDown}/></a>
+                <a href="/">Nuevos Lanzamientos <FontAwesomeIcon className="icons" icon={faAngleDown}/></a>
             </nav>
                 <div className="search-bar">
                     <input type="text" placeholder="Buscar..."/>
-                    <FontAwesomeIcon className="icons" icon={faMagnifyingGlass}/>
-                    <FontAwesomeIcon className="icons" icon={faUser}/>
-                    <FontAwesomeIcon className="icons" icon={faCartShopping}/>
+                </div>
+                <div className="icon">
+                    <a href=""><FontAwesomeIcon className="icons" icon={faMagnifyingGlass}/></a>
+                    <a href=""><FontAwesomeIcon className="icons" icon={faUser}/></a>
+                    <a href=""><FontAwesomeIcon className="icons" icon={faBagShopping}/></a>
                 </div>
             </header>
     </div>
