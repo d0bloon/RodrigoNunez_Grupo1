@@ -1,0 +1,42 @@
+/* Estilos para el menú desplegable */
+.dropdown-container {
+    position: relative;
+}
+/* Estilos para el enlace que activa el menú desplegable */
+.dropdown-trigger {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: fixed;
+    width: 40em;
+    background-color: #c21a01;
+    list-style: none;
+    padding: 4em 0 4em 0;
+    margin: 0;
+    z-index: 1; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+.dropdown li {
+    padding: 3px;
+}
+/* Estilos para los enlaces dentro del menú desplegable */
+.dropdown li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown li a:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-decoration: underline white;
+}
+
+/* Mostrar el menú desplegable cuando se activa */
+.dropdown-container:hover .dropdown {
+    display: block;
+}
