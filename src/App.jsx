@@ -5,12 +5,14 @@ import MisImagenes from "./components/Imagenes/Imagenes.jsx";
 import Banner from "./components/Banner/Banner.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Header from "./components/Header/Header.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
 
 function App() {
     return (
         <>
             <Banner/>
             <Header/>
+            <Navbar/>
             <div className="content">
                 <MisImagenes misrc="/image03.png" mialt="hola"/>
                 <MisImagenes misrc="/image03.png" mialt="hola"/>

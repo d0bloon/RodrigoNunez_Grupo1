@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /* Contenedor del header */
 .header {
     display: flex;
@@ -6,13 +7,13 @@
     color: white;
     width: auto;
     box-sizing: border-box;
-    background-color: #c21a01;
+    background-color: #ffffff;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
     height: auto;
-    margin: 3em 0 0 0;
+    margin: 2em 0 0 0;
 }
 
 /* Estilos para el logo */
@@ -23,20 +24,14 @@
     margin: 0 10px;
     transition: filter 300ms;
 }
-.logo:hover {
-    filter: drop-shadow(0 0 2em #c21a01);
-}
-.logo.react:hover {
-    filter: drop-shadow(0 0 2em #6b0103);
-}
 
 /* Barra de búsqueda */
 .search-bar {
     flex: 1;
     display: flex;
     padding: 2em 1em;
-    justify-content: flex-end;
-    margin: 0 10px;
+    justify-content: center;
+    margin: 0;
 }
 .search-bar input {
     width: 100%;
@@ -47,13 +42,28 @@
 }
 .icon {
     display: flex;
-    gap: 1px;
+    gap: 15px;
     font-size: 18px;
     margin: 0 10px;
 }
 .icon a {
-    color: white;
+    color: #000000;
     text-decoration: none;
     padding: 2em 1em;
     transition: background-color 0.3s;
+}
+.name {
+    color: black;
+    font-family: 'Bebas Neue', fantasy;
+    font-size: 2.2em;
+    font-weight: 4000;
+    font-style: normal;
+}
+@media (max-width: 600px) {
+    .name, .search-bar {
+        display: none;
+    }
+    .header {
+        justify-content: space-between;
+    }
 }

@@ -4,15 +4,17 @@
 }
 /* Estilos para el enlace que activa el menú desplegable */
 .dropdown-trigger {
-    color: white;
+    color: #000000;
+    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
 }
 
 .dropdown {
+    align-content: center;
     position: fixed;
     width: 40em;
-    background-color: #c21a01;
+    background-color: #ffffff;
     list-style: none;
     padding: 4em 0 4em 0;
     margin: 0;
@@ -24,16 +26,15 @@
 }
 /* Estilos para los enlaces dentro del menú desplegable */
 .dropdown li a {
-    color: white;
+    color: #000000;
     text-decoration: none;
     font-size: 14px;
 }
 
 .dropdown li a:hover {
-    color: white;
-    text-decoration: none;
+    color: #000000;
     font-size: 15px;
-    text-decoration: underline white;
+    text-decoration: underline #000000;
 }
 
 /* Mostrar el menú desplegable cuando se activa */

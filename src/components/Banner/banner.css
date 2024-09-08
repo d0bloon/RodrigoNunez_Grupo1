@@ -4,21 +4,21 @@
     left: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #d25d61;
-    color: white;
+    background-color: #ffffff;
+    color: #ffffff;
     z-index: 2;
 }
 
 .banner {
     display: flex;
     align-items: center;
-    height: 3em; /* Altura del slider */
+    height: 2em; /* Altura del slider */
 }
 
 .banner-track {
     display: flex;
     width: calc(300px * 8); /* Ancho según el número de slides */
-    animation: scroll 25s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 
 .banners {
@@ -26,9 +26,9 @@
     justify-content: center;
     align-items: center;
     width: 350px; /* Ancho de cada slide */
-    font-size: 20px; /* Tamaño del texto */
+    font-size: 16px; /* Tamaño del texto */
     font-weight: bold;
-    color: white;
+    color: #000000;
 }
 
 @keyframes scroll {

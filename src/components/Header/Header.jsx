@@ -10,7 +10,7 @@ const Header = () => {
             <header className="header">
                 <img className="logo" src="/logo.png" alt="logo"/>
                 <div>
-                    <Navbar/>
+                    <h1 className="name">ZAPSTORE</h1>
                 </div>
                 <div className="search-bar">
                     <input type="text" placeholder="Buscar..."/>
