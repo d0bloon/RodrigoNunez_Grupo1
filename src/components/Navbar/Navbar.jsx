@@ -2,45 +2,34 @@
 //import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 //import Slider from "../Sliders/Sliders.jsx";
 import Dropdown from "../Dropdown/Dropdown.jsx";
-import './navbar.css';
+import './Navbar.css';
 
 const Navbar = () => {
-    const ofertaCategories = [
-        { name: 'Oferta 1', link: '/oferta1' },
-        { name: 'Oferta 2', link: '/oferta2' },
-    ];
-
-    const marcaCategories = [
-        { name: 'Marca 1', link: '/marca1' },
-        { name: 'Marca 2', link: '/marca2' },
-    ];
-
-    const hombreCategories = [
-        { name: 'Ropa de hombre', link: '/ropa-hombre' },
-        { name: 'Zapatos de hombre', link: '/zapatos-hombre' },
-    ];
-
-    const mujerCategories = [
-        { name: 'Ropa de mujer', link: '/ropa-mujer' },
-        { name: 'Zapatos de mujer', link: '/zapatos-mujer' },
-    ];
-
-    const tendenciasCategories = [
-        { name: 'Tendencia 1', link: '/tendencia1' },
-        { name: 'Tendencia 2', link: '/tendencia2' },
-    ];
-
     return (
-        <div className="navbar-inner">
-            <div className="navbar">
-                {/* ...otros elementos de la barra de navegación */}
-                <Dropdown title="Ofertas" categories={ofertaCategories} />
-                <Dropdown title="Marcas" categories={marcaCategories} />
-                <Dropdown title="Hombre" categories={hombreCategories} />
-                <Dropdown title="Mujer" categories={mujerCategories} />
-                <Dropdown title="Nuevas Tendencias" categories={tendenciasCategories} />
-            </div>
-        </div>
+        <nav className="navbar">
+            <ul className="nav-links">
+                <li className="nav-item">
+                    <a href="#" className="nav-link">Category 1</a>
+                    <Dropdown items={['Subcategory 1.1', 'Subcategory 1.2']} />
+                </li>
+                <li className="nav-item">
+                    <a href="#" className="nav-link">Category 2</a>
+                    <Dropdown items={['Subcategory 2.1', 'Subcategory 2.2']} />
+                </li>
+                <li className="nav-item">
+                    <a href="#" className="nav-link">Category 3</a>
+                    <Dropdown items={['Subcategory 3.1', 'Subcategory 3.2']} />
+                </li>
+                <li className="nav-item">
+                    <a href="#" className="nav-link">Category 4</a>
+                    <Dropdown items={['Subcategory 4.1', 'Subcategory 4.2']} />
+                </li>
+                <li className="nav-item">
+                    <a href="#" className="nav-link">Category 5</a>
+                    <Dropdown items={['Subcategory 5.1', 'Subcategory 5.2']} />
+                </li>
+            </ul>
+        </nav>
     );
 };
 

@@ -1,56 +1,49 @@
-/* Barra de navegación */
 .navbar {
+    background-color: #333;
+    padding: 1rem;
     display: flex;
-    justify-content: center;
-    background-color: #ffffff;
-    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar-inner {
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 2em; /* Ajusta el espacio entre los elementos */
-    white-space: nowrap;
-    overflow-x: hidden; /* Desactiva el desplazamiento horizontal por defecto */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    justify-content: space-between;
 }
 
-.navbar a {
-    color: #000000;
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
     text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    transition: color 0.2s ease;
 }
 
-.navbar a:hover {
-    cursor: pointer;
-    font-size: 18px;
+.nav-link:hover {
+    color: #ccc;
 }
 
-/* Media query para dispositivos móviles */
-@media (max-width: 600px) {
-    .navbar-inner {
-        overflow-x: auto; /* Activa el desplazamiento horizontal en dispositivos móviles */
-        gap: -1em; /* Reduce el espacio entre los elementos */
-        padding: 0 1em; /* Añade un poco de padding para centrar mejor */
-        flex-wrap: nowrap; /* Evita que los elementos se ajusten en una nueva línea */
-    }
-
-    /* Ocultar barras de desplazamiento en dispositivos móviles */
-    .navbar-inner::-webkit-scrollbar {
-        display: none;
-    }
-    .navbar-inner {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
+.nav-item:hover .dropdown {
+    display: block;
 }
 
-/* Media query para pantallas grandes */
-@media (min-width: 601px) {
-    .navbar-inner {
-        justify-content: center;
-        gap: 3em; /* Aumenta el espacio entre los elementos en pantallas grandes */
-        overflow-x: visible; /* Desactiva el desplazamiento horizontal en pantallas grandes */
-        flex-wrap: nowrap; /* Evita que los elementos se ajusten en una nueva línea */
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+    .nav-item {
+        width: 100%;
+    }
+    .dropdown {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
 }
