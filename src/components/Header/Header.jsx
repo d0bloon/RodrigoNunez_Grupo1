@@ -8,17 +8,18 @@ const Header = () => {
     return(
         <div>
             <header className="header">
-                <img className="logo" src="/logo.png" alt="logo"/>
-                <div>
-                    <h1 className="name">ZAPSTORE</h1>
-                </div>
                 <div className="search-bar">
-                    <input type="text" placeholder="Buscar..."/>
-                </div>
+                        <FontAwesomeIcon  className="search-icon" icon={faMagnifyingGlass}/>
+                        <input type="text" placeholder="Buscar..."/>
+                </div>  
+                <div className="header-container">      
+                    <div className="header-content">
+                        <img className="logo" src="/logozapstore.png" alt="logo"/>
+                    </div>
+                </div>        
                 <div className="icon">
-                    <a href=""><FontAwesomeIcon className="icons" icon={faMagnifyingGlass}/></a>
-                    <a href=""><FontAwesomeIcon className="icons" icon={faUser}/></a>
-                    <a href=""><FontAwesomeIcon className="icons" icon={faBagShopping}/></a>
+                    <a href=""><FontAwesomeIcon className="icon-user" icon={faUser}/></a>
+                    <a href=""><FontAwesomeIcon className="icon-bag" icon={faBagShopping}/></a>
                 </div>
             </header>
         </div>

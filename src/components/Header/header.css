@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /* Contenedor del header */
 .header {
     display: flex;
-    justify-content: center;
     align-items: center;
     color: white;
     width: auto;
@@ -16,54 +14,109 @@
     margin: 2em 0 0 0;
 }
 
+/* Contenedor que envuelve al .header-content y al .search-bar */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    display: flex;
+    justify-content: left;
+    border-color: #ffffff;
+    border: none;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    outline: none;
+}
+.search-icon {
+    font-size: 18px;
+    color: #000000;
+    margin-top: 5px;
+    padding: 0 1em;
+}
+
 /* Estilos para el logo */
 .logo {
     display: flex;
     align-items: center;
     height: 6em;
-    margin: 0 10px;
+    margin: 0;
     transition: filter 300ms;
 }
 
-/* Barra de búsqueda */
-.search-bar {
-    flex: 1;
-    display: flex;
-    padding: 2em 1em;
+.name {
+    color: black;
     justify-content: center;
-    margin: 0;
+    font-family: 'Bebas Neue', fantasy;
+    font-size: 2.2em;
+    font-weight: 4000;
+    font-style: normal;
+    margin-left: 10px;
 }
-.search-bar input {
-    width: 100%;
-    max-width: 20em;
-    padding: 5px;
-    border: none;
-    border-radius: 4px;
-}
-.icon {
-    display: flex;
-    gap: 15px;
+/* Estilos para los iconos */
+.icon-user, .icon-bag {
+    display: inline-block;
     font-size: 18px;
     margin: 0 10px;
 }
+
 .icon a {
     color: #000000;
     text-decoration: none;
     padding: 2em 1em;
     transition: background-color 0.3s;
 }
-.name {
-    color: black;
-    font-family: 'Bebas Neue', fantasy;
-    font-size: 2.2em;
-    font-weight: 4000;
-    font-style: normal;
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
     .name, .search-bar {
         display: none;
     }
+    .logo {
+        display: block;
+        position: relative;
+        width: 150px;
+        max-width: 100%;
+        left: 30%;
+        transform: translateX(-50%);
+        object-fit: contain;
+    }
     .header {
-        justify-content: space-between;
+        flex-basis: auto; 
+    }
+    
+    .icon {
+        display: block;
+    }
+    .icon-user {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .icon-bag {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }

@@ -17,8 +17,8 @@
 
 .banner-track {
     display: flex;
-    width: calc(300px * 8); /* Ancho según el número de slides */
-    animation: scroll 10s linear infinite;
+    width: calc(300px * 14); /* Ancho según el número de slides */
+    animation: scroll 30s linear infinite;
 }
 
 .banners {
@@ -36,6 +36,6 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-300px * 4)); /* Ajustar según el número de slides */
+        transform: translateX(calc(-350px * 7)); /* Ajustar según el número de slides */
     }
 }
