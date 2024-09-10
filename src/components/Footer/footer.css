@@ -52,8 +52,8 @@
   }
   
   .logof {
-    display: block; /* changed from flex to block */
-    margin: 0 auto; /* added to center the logo */
+    display: block;
+    margin: 0 auto;
     height: 6em;
     transition: filter 300ms;
   }
