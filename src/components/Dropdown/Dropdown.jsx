@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './Dropdown.css';
+import './dropdown.css';
 
 const Dropdown = ({ items }) => {
     return (
