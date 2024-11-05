@@ -1,5 +1,6 @@
 .main-footer {
     background-color: #000000;
+    border-radius: 15px 15px 0 0;
     padding: 10px;
     color: #ffffff;
   }
@@ -33,6 +34,7 @@
   
   .listado li a{
     color: #ffffff;
+    text-decoration: none;
   }
   
   .listado li:last-child {
@@ -47,8 +49,12 @@
   
   .col-sm {
     font-size: 15px;
-    color: gray;
+    color: white;
     text-align: center;
+  }
+  .col-sm a {
+    color: #ffffff;
+    text-decoration: none;
   }
   
   .logof {
@@ -71,6 +77,13 @@
     flex-direction: column;
     align-items: center;
   }
+
+.divider {
+  border: none;
+  border-top: 1px solid gray;
+  width: 80%;
+  margin: 10px auto;
+}
   
   @media (max-width: 768px) {
     .main-footer {

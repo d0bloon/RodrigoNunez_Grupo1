@@ -1,6 +1,54 @@
+.content-image {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas si es necesario */
+    gap: 30px; /* Espacio entre las imágenes */
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.content-image a {
+    height: 300px;
+    width: 300px;
+}
+
 .imagen {
+    display: flex;
+    position: relative;
     border-radius: 15px;
-    max-width: 100%;
+    max-width: 300px; /* Ajusta el tamaño de las imágenes */
     height: auto;
-    margin: 0 auto;
+}
+.imagen:hover {
+    transform: scale(1.1);
+}
+.content-text{
+    display: flex;
+    justify-content: center;
+}
+.text {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+.text:hover {
+    color: #D03F30;
+}
+@media (max-width: 768px) {
+    .content-image a{
+        width: 100px;
+        height: 100px;
+    }
+    .imagen {
+        display: flex;
+        max-width: 100px;
+    }
+    .text{
+        font-size: 18px;
+    }
 }

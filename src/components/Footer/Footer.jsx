@@ -45,8 +45,9 @@ const Footer = () => {
             </div>
             <div className="footer-bottom">
               <img className="logof" src="/logozapstorewhite.png" alt="logo"/>
+              <hr className="divider"/>
               <p className="col-sm">
-                &copy;{new Date().getFullYear()} ZapStore  | Todos los derechos reservados  | Castro, Los Lagos, Chiloe.
+                &copy;{new Date().getFullYear()} <a href="#">ZapStore</a> | Todos los derechos reservados | Castro, Los Lagos, Chiloe.
               </p>
             </div>
           </div>
@@ -54,5 +55,5 @@ const Footer = () => {
       </footer>
     );
   };
-  
-  export default Footer;
+
+export default Footer;

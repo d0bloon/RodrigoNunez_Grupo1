@@ -1,12 +1,22 @@
 .navbar {
-    background-color: #ffffff;
+    top: 7.25rem;
+    position: relative;
+    background-color: rgb(255, 255, 255);
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000; /* Asegúrate de que el navbar esté por encima de otros elementos */
+}
+
+.item-sale {
+    font-weight: bold;
+    text-decoration: none;
+    color: #D03F30;
 }
 
 .nav-links {
+    font-size: 1.15rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -16,37 +26,100 @@
 }
 
 .nav-item {
-    position: relative;
     margin: 0 3em;
     flex-grow: 1;
 }
 
 .nav-link {
+    font-weight: bold;
     color: #000000;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-    color: #000000;
+    color: #D03F30;
 }
 
 .nav-item:hover .dropdown {
-    display: block;
+    display: flex; /* Para la versión de escritorio cuando se pasa el ratón por encima */
 }
 
-/* Responsive styles */
+.nav_toggle {
+    display: none;
+}
+
 @media (max-width: 768px) {
+    .navbar{
+        height: 80px;
+        width: 50px;
+        padding: 0;
+        top: 2rem;
+        display: flex;
+        justify-content: left;
+        z-index: 1008;
+        background-color: rgba(255, 255, 255, 0);
+        position: sticky;
+    }
     .nav-links {
+        padding: 1rem;
         flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: rgb(255, 255, 255);
+        width: 500px;
+        height: calc(50vh - 60px);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1001; /* Asegúrate de que el menú hamburguesa esté por encima de otros elementos */
+    }
+    .nav-links.open {
+        transform: translateX(0);
     }
     .nav-item {
         width: 100%;
+        margin: 0;
     }
     .dropdown {
+        display: none;
         position: relative;
         top: 0;
         left: 0;
         width: 100%;
+        flex-direction: column;
+    }
+
+    .nav_toggle {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        cursor: pointer;
+        z-index: 1002; /* Asegúrate de que el icono del menú esté por encima de otros elementos */
+        position: sticky;
+        top: 0;
+    }
+    .nav_toggle span {
+        width: 20px;
+        height: 3px;
+        background: #000;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transition: all 0.2s;
+    }
+    .nav_toggle.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .nav_toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .nav_toggle.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    .nav-item.open .dropdown {
+        display: flex;
+    }
+    .nav-item:hover .dropdown {
+        display: flex;
     }
 }

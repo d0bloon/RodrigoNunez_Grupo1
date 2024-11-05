@@ -6,7 +6,7 @@
     overflow: hidden;
     background-color: #ffffff;
     color: #ffffff;
-    z-index: 2;
+    z-index: 10000;
 }
 
 .banner {
@@ -37,5 +37,10 @@
     }
     100% {
         transform: translateX(calc(-350px * 7)); /* Ajustar según el número de slides */
+    }
+}
+@media (max-width: 768px) {
+    .banner-track {
+        width: calc(250px * 14);
     }
 }
